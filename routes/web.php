@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use PhpParser\Node\Stmt\Foreach_;
 
 /*
 |--------------------------------------------------------------------------
@@ -138,7 +139,25 @@ $data = [
     ]
 ];
 
+
+    $lunga = [];
+    $corta = [];
+    $cortissima = [];
+
+    foreach ($data as $pasta) {
+        if ($pasta['tipo'] == 'lunga') {
+            $lunga [] = $pasta;
+        }elseif ($pasta['tipo'] == 'corta') {
+            $corta [] = $pasta;
+        }elseif ($pasta['tipo'] == 'cortissima') {
+            $cortissima [] = $pasta; 
+        }      
+    }
+
     return view('home', [
-        'paste' => $data
+        'corte' => $corta,
+        'lunghe' => $lunga,
+        'cortissime' => $cortissima,
+
     ]);
 });

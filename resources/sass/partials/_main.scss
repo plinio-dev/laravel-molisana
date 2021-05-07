@@ -1,0 +1,15 @@
+.container-small {
+   .cards {
+      display: flex;
+      flex-wrap: wrap;
+   }
+      .card {
+         width: calc((100% / 3) - 20px);
+         margin: 5px;
+         height: auto;
+         img {
+            display: block;
+            width: 100%;;
+         }
+      }
+}
