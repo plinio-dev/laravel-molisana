@@ -3,12 +3,20 @@
    padding: 0;
    box-sizing: boreder-box;
 }
-
+body {
+   font-family: 'Open Sans', sans-serif;
+}
 .container {
    width: 100%;
    text-align: center;
+   padding: 35px 0;
 }
-
+a{
+   text-decoration: none;;
+}
 .flex {
    display: flex;
+}
+.active {
+   background-color: $secondaryColor;
 }
