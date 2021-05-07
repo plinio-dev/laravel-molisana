@@ -13,7 +13,7 @@
 </head>
 <body>
    <header>
-      <div class="container">
+   <div class="container pd-tb-35 ">
          <div class="logo">
             <img src="{{ asset ('images/marchio-sito-test.png') }}" alt="immagine-logo">
          </div>
@@ -21,14 +21,16 @@
       <div class="container">
          <nav>
             <ul>
-               <li><a class="menu-font active" href="">Home</a></li>
-               <li><a class="menu-font" href="">Prodotti</a></li>
-               <li><a class="menu-font" href="">News</a></li>
+               <li><a class="font-menu" href="">Home</a></li>
+               <li><a class="font-menu active" href="">Prodotti</a></li>
+               <li><a class="font-menu" href="">News</a></li>
             </ul>
          </nav>
       </div>
    </header>
-   <main class="container">
+   {{-- main section --}}
+   <main class="container paste">
+      {{-- paste lunghe --}}
       <section class="container-small lunghe">
          <h2>Le lunghe</h2>
          <div class="cards">
@@ -38,16 +40,34 @@
                </div>  
             @endforeach 
          </div>
-        
-        
       </section>
+      {{-- paste lunghe --}}
+      {{-- paste corte --}}
       <section class="container-small corte">
          <h2>Le corte</h2>
-         
+         <div class="cards">
+            @foreach ($corte as $pasta)
+               <div class="card">
+                  <img src="{{$pasta['src']}}" alt="{{$pasta['titolo']}}">
+               </div>  
+            @endforeach 
+         </div>
       </section>
+      {{-- paste corte --}}
+      {{-- paste cortissime --}}
       <section class="container-small cortissime">
          <h2>Le cortissime</h2>
+         <div class="cards">
+            @foreach ($cortissime as $pasta)
+               <div class="card">
+                  <img src="{{$pasta['src']}}" alt="{{$pasta['titolo']}}">
+               </div>  
+            @endforeach 
+         </div>
       </section>
+      {{-- paste cortissime --}}
+
    </main>
+     {{-- main section --}}
 </body>
 </html>

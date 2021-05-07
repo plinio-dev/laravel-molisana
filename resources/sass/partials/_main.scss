@@ -1,7 +1,15 @@
+.paste {
+   background-image: url('/images/fondo-pag-speciali.jpg');
+   background-size: contain;
+   background-repeat: repeat;
+   padding: 60px 0;
+}
+
 .container-small {
    .cards {
       display: flex;
       flex-wrap: wrap;
+      padding: 20px 0 ;
    }
       .card {
          width: calc((100% / 3) - 20px);
