@@ -160,4 +160,12 @@ $data = [
         'cortissime' => $cortissima,
 
     ]);
-});
+})->name('homepage');
+
+// Route::get('prodotti', function () {
+//     return view('prodotti');
+// })->name('prodotti');
+
+Route::get('news', function () {
+    return view('news');
+})->name('news');

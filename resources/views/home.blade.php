@@ -1,6 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+
 @extends('layouts.main')
+
+@section('titoloPagina')
+   La Molisana
+@endsection
 
 @section('main')
     {{-- main section --}}
