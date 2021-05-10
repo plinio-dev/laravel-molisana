@@ -36,6 +36,10 @@ a {
   padding: 35px 0;
 }
 
+.bg-c {
+  background-color: #b7dae5;
+}
+
 .container h3 {
   padding: 40px;
 }
@@ -82,4 +86,8 @@ h2 {
   font-size: 30px;
   font-weight: 400;
   margin: 10px 20px;
+}
+
+.product img {
+  width: 100%;
 }
