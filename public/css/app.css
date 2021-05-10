@@ -36,6 +36,10 @@ a {
   padding: 35px 0;
 }
 
+.container h3 {
+  padding: 40px;
+}
+
 nav ul {
   margin: 20px 0;
 }
