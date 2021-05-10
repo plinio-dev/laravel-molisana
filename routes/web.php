@@ -44,9 +44,14 @@ $data = config('paste');
     ]);
 })->name('homepage');
 
+
 Route::get('prodotto/{id}', function ($id) {
 
     $data = config('paste');
+
+    if ($id >= count($data)) {
+        abort(404);
+    }
 
     $pasta = $data[$id];
 
@@ -56,6 +61,7 @@ Route::get('prodotto/{id}', function ($id) {
 
     
 })->where('id', '[0-9]+')->name('prodotto');
+
 
 Route::get('news', function () {
     return view('news');
