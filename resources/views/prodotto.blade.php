@@ -14,7 +14,7 @@
          <img src="{{$pasta['src-h']}}" alt="">
          <img src="{{$pasta['src-p']}}" alt="{{$pasta['titolo']}}">
          <p>
-            {{!!$pasta['descrizione']!!}}
+            {!!$pasta['descrizione']!!}
          </p>
       </div>
    </div>

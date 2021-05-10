@@ -88,6 +88,18 @@ h2 {
   margin: 10px 20px;
 }
 
+.product {
+  text-align: center;
+  padding: 50px 0;
+}
 .product img {
   width: 100%;
+}
+.product h1 {
+  color: #012d73;
+}
+.product p {
+  text-align: left;
+  font-size: 25px;
+  color: #012d73;
 }
